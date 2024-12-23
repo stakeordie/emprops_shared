@@ -1,7 +1,7 @@
 comfyui:
     base_path: /workspace/shared
     custom_nodes: custom_nodes/
-    imports: imports/
+    input: input/
     checkpoints: models/checkpoints/
     clip: models/clip/
     clip_vision: models/clip_vision/
