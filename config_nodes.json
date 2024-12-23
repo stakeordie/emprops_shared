@@ -1,0 +1,168 @@
+{
+  "custom_nodes": [
+    {
+      "name": "eden_comfy_pipelines",
+      "url": "https://github.com/edenartlab/eden_comfy_pipelines.git",
+      "requirements": true,
+      "env": {
+        "OPENAI_API_KEY": "${OPENAI_API_KEY}"
+      }
+    },
+    {
+      "name": "ComfyUI_ModdedNodes",
+      "url": "https://github.com/Derfuu/Derfuu_ComfyUI_ModdedNodes",
+      "requirements": true
+    },
+    {
+      "name": "comfyui-dreambait-nodes",
+      "url": "https://github.com/drmbt/comfyui-dreambait-nodes",
+      "requirements": true
+    },
+    {
+      "name": "ComfyUI-Frame-Interpolation",
+      "url": "https://github.com/Fannovel16/ComfyUI-Frame-Interpolation",
+      "requirements": true
+    },
+    {
+      "name": "ComfyUI-Crystools",
+      "url": "https://github.com/crystian/ComfyUI-Crystools",
+      "requirements": true
+    },
+    {
+      "name": "execution-inversion-demo-comfyui",
+      "url": "https://github.com/BadCafeCode/execution-inversion-demo-comfyui.git",
+      "requirements": true
+    },
+    {
+      "name": "comfyui_controlnet_aux",
+      "url": "https://github.com/Fannovel16/comfyui_controlnet_aux",
+      "requirements": true
+    },
+    {
+      "name": "ComfyUI_FizzNodes",
+      "url": "https://github.com/FizzleDorf/ComfyUI_FizzNodes",
+      "requirements": true
+    },
+    {
+      "name": "ComfyUI-Advanced-ControlNet",
+      "url": "https://github.com/Kosinkadink/ComfyUI-Advanced-ControlNet",
+      "requirements": true
+    },
+    {
+      "name": "ComfyUI-AnimateDiff-Evolved",
+      "url": "https://github.com/Kosinkadink/ComfyUI-AnimateDiff-Evolved",
+      "requirements": true
+    },
+    {
+      "name": "ComfyUI-VideoHelperSuite",
+      "url": "https://github.com/Kosinkadink/ComfyUI-VideoHelperSuite",
+      "requirements": true,
+      "commit": "0d44f4b46dd05303664a1aa26e87534d5eef3ac8"
+    },
+    {
+      "name": "SeargeSDXL",
+      "url": "https://github.com/SeargeDP/SeargeSDXL",
+      "requirements": true
+    },
+    {
+      "name": "ComfyUi_NNLatentUpscale",
+      "url": "https://github.com/Ttl/ComfyUi_NNLatentUpscale",
+      "requirements": true
+    },
+    {
+      "name": "was-node-suite-comfyui",
+      "url": "https://github.com/WASasquatch/was-node-suite-comfyui",
+      "requirements": true
+    },
+    {
+      "name": "ComfyUI_IPAdapter_plus",
+      "url": "https://github.com/cubiq/ComfyUI_IPAdapter_plus.git",
+      "requirements": true
+    },
+    {
+      "name": "ComfyUI_essentials",
+      "url": "https://github.com/cubiq/ComfyUI_essentials",
+      "requirements": true
+    },
+    {
+      "name": "ComfyUI-DepthAnythingV2",
+      "url": "https://github.com/kijai/ComfyUI-DepthAnythingV2",
+      "requirements": true
+    },
+    {
+      "name": "ComfyUI-Florence2",
+      "url": "https://github.com/kijai/ComfyUI-Florence2",
+      "requirements": true
+    },
+    {
+      "name": "efficiency-nodes-comfyui",
+      "url": "https://github.com/jags111/efficiency-nodes-comfyui",
+      "requirements": true
+    },
+    {
+      "name": "ComfyUI-KJNodes",
+      "url": "https://github.com/kijai/ComfyUI-KJNodes",
+      "requirements": true
+    },
+    {
+      "name": "rgthree-comfy",
+      "url": "https://github.com/rgthree/rgthree-comfy",
+      "requirements": true
+    },
+    {
+      "name": "ComfyUI-Depthflow-Nodes",
+      "url": "https://github.com/akatz-ai/ComfyUI-Depthflow-Nodes",
+      "requirements": true
+    },
+    {
+      "name": "comfyui_segment_anything",
+      "url": "https://github.com/storyicon/comfyui_segment_anything",
+      "requirements": true
+    },
+    {
+      "name": "ComfyUI_ExtraModels",
+      "url": "https://github.com/city96/ComfyUI_ExtraModels.git",
+      "requirements": true
+    },
+    {
+      "name": "ComfyUI-Custom-Scripts",
+      "url": "https://github.com/pythongosssss/ComfyUI-Custom-Scripts.git",
+      "requirements": true
+    },
+    {
+      "name": "ComfyUI-LLaVA-OneVision",
+      "url": "https://github.com/kijai/ComfyUI-LLaVA-OneVision.git",
+      "requirements": true
+    },
+    {
+      "name": "ComfyUI-Universal-Styler",
+      "url": "https://github.com/KoreTeknology/ComfyUI-Universal-Styler.git",
+      "requirements": true
+    },
+    {
+      "name": "DJZ-Nodes",
+      "url": "https://github.com/MushroomFleet/DJZ-Nodes.git",
+      "requirements": true
+    },
+    {
+      "name": "ComfyUI-Easy-Use",
+      "url": "https://github.com/yolain/ComfyUI-Easy-Use.git",
+      "requirements": true
+    },
+    {
+      "name": "ComfyUI_LayerStyle",
+      "url": "https://github.com/chflame163/ComfyUI_LayerStyle.git",
+      "requirements": true
+    },
+    {
+      "name": "ComfyUI-MochiWrapper",
+      "url": "https://github.com/kijai/ComfyUI-MochiWrapper.git",
+      "requirements": true
+    },
+    {
+      "name": "ComfyUI-MochiEdit",
+      "url": "https://github.com/logtd/ComfyUI-MochiEdit.git",
+      "requirements": true
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+comfyui:
+    base_path: /workspace/shared
+    custom_nodes: custom_nodes/
+    imports: imports/
+    checkpoints: models/checkpoints/
+    clip: models/clip/
+    clip_vision: models/clip_vision/
+    configs: models/configs/
+    controlnet: models/controlnet/
+    diffusers: models/diffusers/
+    diffusion_models: models/diffusion_models/
+    embeddings: models/embeddings/
+    gligen: models/gligen/
+    hypernetworks: models/hypernetworks/
+    ipadapter: models/ipadapter/
+    loras: models/loras/
+    photomaker: models/photomaker/
+    sams: models/sams/
+    style_models: models/style_models/
+    ultralytics: models/ultralytics/
+    unet: models/unet/
+    upscale_models: models/upscale_models/
+    vae: models/vae/
+    vae_approx: models/vae_approx/
