@@ -1,6 +1,11 @@
 {
   "custom_nodes": [
     {
+      "name": "emprops_comfy_nodes",
+      "url": "https://github.com/stakeordie/emprops_comfy_nodes.git",
+      "requirements": true
+    },
+    {
       "name": "eden_comfy_pipelines",
       "url": "https://github.com/edenartlab/eden_comfy_pipelines.git",
       "requirements": true,
