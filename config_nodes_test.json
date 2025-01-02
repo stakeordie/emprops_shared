@@ -3,7 +3,12 @@
     {
       "name": "emprops_comfy_nodes",
       "url": "https://github.com/stakeordie/emprops_comfy_nodes.git",
-      "requirements": true
+      "requirements": true,
+      "env": {
+        "AWS_ACCESS_KEY_ID": "${AWS_ACCESS_KEY_ID}",
+        "AWS_SECRET_ACCESS_KEY": "${AWS_SECRET_ACCESS_KEY_ENCODED}",
+        "AWS_DEFAULT_REGION": "${AWS_DEFAULT_REGION}"
+      }
     },
     {
       "name": "eden_comfy_pipelines",
