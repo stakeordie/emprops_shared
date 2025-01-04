@@ -141,7 +141,7 @@
     },
     {
       "name": "ComfyUI-LLaVA-OneVision",
-      "url": "https://github.com/kijai/ComfyUI-LLaVA-OneVision.git",
+      "url": "https://github.com/the-dusky/ComfyUI-LLaVA-OneVision.git",
       "requirements": true
     },
     {

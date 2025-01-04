@@ -2,6 +2,7 @@ comfyui:
     base_path: /workspace/shared
     custom_nodes: custom_nodes/
     input: input/
+    animatediff_models: models/animatediff_models/
     checkpoints: models/checkpoints/
     clip: models/clip/
     clip_vision: models/clip_vision/
