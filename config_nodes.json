@@ -175,8 +175,49 @@
       "requirements": true
     },
     {
+      "name": "ComfyUI-AutomaticCFG",
+      "url": "https://github.com/Extraltodeus/ComfyUI-AutomaticCFG",
+      "requirements": true
+    },
+    {
+      "name": "comfyui-dream-project",
+      "url": "https://github.com/alt-key-project/comfyui-dream-project",
+      "requirements": true
+    },
+    {
+      "name": "ComfyUI-TiledDiffusion",
+      "url": "https://github.com/shiimizu/ComfyUI-TiledDiffusion",
+      "requirements": true
+    },
+    {
+      "name": "ComfyUI_Comfyroll_CustomNodes",
+      "url": "https://github.com/Suzie1/ComfyUI_Comfyroll_CustomNodes",
+      "requirements": true
+    },
+    {
+      "name": "ComfyUI-layerdiffuse",
+      "url": "https://github.com/huchenlei/ComfyUI-layerdiffuse",
+      "requirements": true
+    },
+    {
+      "name": "ComfyUI-LogicUtils",
+      "url": "https://github.com/aria1th/ComfyUI-LogicUtils",
+      "requirements": true
+    },
+    {
       "name": "ComfyUI-Impact-Pack",
-      "url": "https://github.com/ltdrdata/ComfyUI-Impact-Pack.git",
+      "url": "https://github.com/ltdrdata/ComfyUI-Impact-Pack",
+      "requirements": true
+    },
+    {
+      "name": "comfyui-prompt-reader-node",
+      "url": "https://github.com/receyuki/comfyui-prompt-reader-node",
+      "recursive": true,
+      "requirements": true
+    },
+    {
+      "name": "ComfyMath",
+      "url": "https://github.com/evanspearman/ComfyMath",
       "requirements": true
     }
   ]
