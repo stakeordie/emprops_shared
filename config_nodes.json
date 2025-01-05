@@ -142,6 +142,7 @@
     {
       "name": "ComfyUI-LLaVA-OneVision",
       "url": "https://github.com/the-dusky/ComfyUI-LLaVA-OneVision.git",
+      "branch": "add-video-dependencies",
       "requirements": true
     },
     {
