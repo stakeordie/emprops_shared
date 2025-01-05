@@ -173,6 +173,11 @@
       "name": "ComfyUI-MochiEdit",
       "url": "https://github.com/logtd/ComfyUI-MochiEdit.git",
       "requirements": true
+    },
+    {
+      "name": "ComfyUI-Impact-Pack",
+      "url": "https://github.com/ltdrdata/ComfyUI-Impact-Pack.git",
+      "requirements": true
     }
   ]
 }
