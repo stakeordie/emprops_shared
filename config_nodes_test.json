@@ -17,6 +17,12 @@
       "env": {
         "OPENAI_API_KEY": "${OPENAI_API_KEY}"
       }
+    },
+    {
+      "name": "ComfyUI-LLaVA-OneVision",
+      "url": "https://github.com/the-dusky/ComfyUI-LLaVA-OneVision.git",
+      "branch": "add-video-dependencies",
+      "requirements": true
     }
   ]
 }
