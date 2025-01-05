@@ -23,6 +23,12 @@
       "url": "https://github.com/the-dusky/ComfyUI-LLaVA-OneVision.git",
       "branch": "add-video-dependencies",
       "requirements": true
+    },
+    {
+      "name": "comfyui-prompt-reader-node",
+      "url": "https://github.com/receyuki/comfyui-prompt-reader-node",
+      "recursive": true,
+      "requirements": true
     }
   ]
 }
