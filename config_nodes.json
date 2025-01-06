@@ -220,6 +220,12 @@
       "name": "ComfyMath",
       "url": "https://github.com/evanspearman/ComfyMath",
       "requirements": true
+    },
+    {
+      "name": "x-flux-comfyui",
+      "url": "https://github.com/XLabs-AI/x-flux-comfyui",
+      "commit": "14cfba14655eb19058963fb0d858b0bdb2d89cf0",
+      "requirements": true
     }
   ]
 }
