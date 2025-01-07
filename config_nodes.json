@@ -226,6 +226,16 @@
       "url": "https://github.com/XLabs-AI/x-flux-comfyui",
       "commit": "14cfba14655eb19058963fb0d858b0bdb2d89cf0",
       "requirements": true
+    },
+    {
+      "name": "cg-use-everywhere",  
+      "url": "https://github.com/chrisgoringe/cg-use-everywhere",
+      "requirements": true
+    },
+    {
+      "name": "ComfyUI_Yvann-Nodes",
+      "url": "https://github.com/yvann-ba/ComfyUI_Yvann-Nodes",
+      "requirements": true
     }
   ]
 }
