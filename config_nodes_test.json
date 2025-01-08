@@ -3,6 +3,7 @@
     {
       "name": "emprops_comfy_nodes",
       "url": "https://github.com/stakeordie/emprops_comfy_nodes.git",
+      "recursive": true,
       "requirements": true,
       "env": {
         "AWS_ACCESS_KEY_ID": "${AWS_ACCESS_KEY_ID}",
