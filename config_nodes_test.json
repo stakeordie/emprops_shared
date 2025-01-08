@@ -29,6 +29,12 @@
       "url": "https://github.com/receyuki/comfyui-prompt-reader-node",
       "recursive": true,
       "requirements": true
+    },
+    {
+      "name": "ComfyUI-VideoHelperSuite",
+      "url": "https://github.com/Kosinkadink/ComfyUI-VideoHelperSuite",
+      "requirements": true,
+      "commit": "0d44f4b46dd05303664a1aa26e87534d5eef3ac8"
     }
   ]
 }
