@@ -33,8 +33,13 @@
     {
       "name": "ComfyUI-VideoHelperSuite",
       "url": "https://github.com/stakeordie/ComfyUI-VideoHelperSuite",
-      "branch": "feature/emprops-s3-upload",
-      "requirements": true
+      "branch": "feature/s3-upload",
+      "requirements": true,
+      "env": {
+        "AWS_ACCESS_KEY_ID": "${AWS_ACCESS_KEY_ID}",
+        "AWS_SECRET_ACCESS_KEY_ENCODED": "${AWS_SECRET_ACCESS_KEY_ENCODED}",
+        "AWS_DEFAULT_REGION": "${AWS_DEFAULT_REGION}"
+      }
     }
   ]
 }
