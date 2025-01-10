@@ -67,7 +67,6 @@
     {
       "name": "ComfyUI-VideoHelperSuite",
       "url": "https://github.com/stakeordie/ComfyUI-VideoHelperSuite",
-      "branch": "feature/s3-upload",
       "requirements": true,
       "env": {
         "AWS_ACCESS_KEY_ID": "${AWS_ACCESS_KEY_ID}",
