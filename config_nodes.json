@@ -156,11 +156,6 @@
       "requirements": true
     },
     {
-      "name": "DJZ-Nodes",
-      "url": "https://github.com/MushroomFleet/DJZ-Nodes.git",
-      "requirements": true
-    },
-    {
       "name": "ComfyUI-Easy-Use",
       "url": "https://github.com/yolain/ComfyUI-Easy-Use.git",
       "requirements": true
@@ -240,6 +235,26 @@
     {
       "name": "ComfyUI_Yvann-Nodes",
       "url": "https://github.com/yvann-ba/ComfyUI_Yvann-Nodes",
+      "requirements": true
+    },{
+      "name": "ComfyLiterals",
+      "url": "https://github.com/M1kep/ComfyLiterals",
+      "requirements": false
+    },{
+      "name": "ComfyUI_Mira",
+      "url": "https://github.com/mirabarukaso/ComfyUI_Mira",
+      "requirements": false
+    },{
+      "name": "ComfyUI-BiRefNet-Hugo",
+      "url": "https://github.com/MoonHugo/ComfyUI-BiRefNet-Hugo",
+      "requirements": true
+    },{
+      "name": "ComfyUI_RH_OminiControl",
+      "url": "https://github.com/HM-RunningHub/ComfyUI_RH_OminiControl",
+      "requirements": false
+    },{
+      "name": "DJZ-Nodes",
+      "url": "https://github.com/MushroomFleet/DJZ-Nodes.git",
       "requirements": true
     }
   ]
