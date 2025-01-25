@@ -256,6 +256,10 @@
       "name": "DJZ-Nodes",
       "url": "https://github.com/MushroomFleet/DJZ-Nodes.git",
       "requirements": true
+    },{
+      "name": "comfy_mtb",
+      "url": "https://github.com/melMass/comfy_mtb.git",
+      "requirements": true
     }
   ]
 }
