@@ -1,0 +1,1397 @@
+{
+  "last_node_id": 55,
+  "last_link_id": 92,
+  "nodes": [
+    {
+      "id": 34,
+      "type": "SaveImage",
+      "pos": [
+        5044.31201171875,
+        1915.580078125
+      ],
+      "size": [
+        315,
+        270
+      ],
+      "flags": {},
+      "order": 20,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 57
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "SaveImage"
+      },
+      "widgets_values": [
+        "sd3.5\\%date:yyyy-MM-dd%\\sd3.5"
+      ]
+    },
+    {
+      "id": 35,
+      "type": "ClownsharKSampler",
+      "pos": [
+        4084.31201171875,
+        1705.579833984375
+      ],
+      "size": [
+        400,
+        796
+      ],
+      "flags": {},
+      "order": 17,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 58
+        },
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": 59,
+          "shape": 7
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "link": 60,
+          "shape": 7
+        },
+        {
+          "name": "sigmas",
+          "type": "SIGMAS",
+          "link": 61,
+          "shape": 7
+        },
+        {
+          "name": "latent_image",
+          "type": "LATENT",
+          "link": 62,
+          "shape": 7
+        },
+        {
+          "name": "guides",
+          "type": "GUIDES",
+          "link": null,
+          "shape": 7
+        },
+        {
+          "name": "options",
+          "type": "OPTIONS",
+          "link": null,
+          "shape": 7
+        },
+        {
+          "name": "automation",
+          "type": "AUTOMATION",
+          "link": null,
+          "shape": 7
+        }
+      ],
+      "outputs": [
+        {
+          "name": "output",
+          "type": "LATENT",
+          "links": [
+            83
+          ],
+          "slot_index": 0
+        },
+        {
+          "name": "denoised",
+          "type": "LATENT",
+          "links": null,
+          "slot_index": 1
+        },
+        {
+          "name": "sde_noise",
+          "type": "LATENT",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ClownsharKSampler"
+      },
+      "widgets_values": [
+        "hires-pyramid-bicubic",
+        "uniform",
+        "sinusoidal",
+        0.5,
+        33834811882959,
+        "fixed",
+        "standard",
+        "res_2s",
+        "none",
+        "beta57",
+        100,
+        0,
+        1,
+        1,
+        5,
+        ""
+      ]
+    },
+    {
+      "id": 49,
+      "type": "CLIPTextEncodeSD3",
+      "pos": [
+        3644.31201171875,
+        1915.580078125
+      ],
+      "size": [
+        400,
+        200
+      ],
+      "flags": {},
+      "order": 16,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 78
+        },
+        {
+          "name": "clip_l",
+          "type": "STRING",
+          "link": 79,
+          "widget": {
+            "name": "clip_l"
+          }
+        },
+        {
+          "name": "clip_g",
+          "type": "STRING",
+          "link": 80,
+          "widget": {
+            "name": "clip_g"
+          }
+        },
+        {
+          "name": "t5xxl",
+          "type": "STRING",
+          "link": 81,
+          "widget": {
+            "name": "t5xxl"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            59
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CLIPTextEncodeSD3"
+      },
+      "widgets_values": [
+        "",
+        "",
+        "",
+        "none"
+      ]
+    },
+    {
+      "id": 51,
+      "type": "UnloadModel",
+      "pos": [
+        4554.31201171875,
+        1715.579833984375
+      ],
+      "size": [
+        210,
+        46
+      ],
+      "flags": {},
+      "order": 18,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "value",
+          "type": "*",
+          "link": 83
+        },
+        {
+          "name": "model",
+          "type": "*",
+          "link": null,
+          "shape": 7
+        }
+      ],
+      "outputs": [
+        {
+          "name": "*",
+          "type": "*",
+          "links": [
+            84
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "UnloadModel"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 52,
+      "type": "VAEDecode",
+      "pos": [
+        4554.31201171875,
+        1815.579833984375
+      ],
+      "size": [
+        210,
+        46
+      ],
+      "flags": {},
+      "order": 19,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "samples",
+          "type": "LATENT",
+          "link": 84
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": 85
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            57
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "VAEDecode"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 53,
+      "type": "CLIPTextEncode",
+      "pos": [
+        3644.31201171875,
+        2165.57958984375
+      ],
+      "size": [
+        400,
+        200
+      ],
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 86
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            60
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CLIPTextEncode"
+      },
+      "widgets_values": [
+        "the image is ugly, incoherent and blurry. The image is made of beads and threads. it has jpeg compression artifacts "
+      ]
+    },
+    {
+      "id": 43,
+      "type": "ShowText|pysssss",
+      "pos": [
+        1864.31201171875,
+        1725.579833984375
+      ],
+      "size": [
+        554.359130859375,
+        419.250244140625
+      ],
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 72,
+          "widget": {
+            "name": "text"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            87
+          ],
+          "slot_index": 0,
+          "shape": 6
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": [
+        [
+          "{\"reasoning\": \"To capture the ethereal depiction of agony and suffering with a surreal impressionism style in acrylic, the focus should be on dreamlike, distorted forms and vivid, emotive colors that convey deep emotional turmoil while maintaining a painterly, textured aesthetic typical of acrylic mediums.\",\n\"T5\": \"A surreal, ethereal scene where human forms are abstracted and intertwined, expressing deep agony and suffering. Colors bleed and blend in vibrant, emotive hues—crimson for intense pain, deep blues for sorrow, and swirling purples for confusion. The background is chaotic yet harmonious, with elements floating ambiguously, creating an otherworldly atmosphere that emphasizes emotional depth through textured acrylic strokes.\",\n\"CLIPG\": \"ethereal, agony, surreal, impressionism, acrylic, vibrant hues, distorted forms, emotional turmoil\",\n\"CLIPL\": \"Ethereal forms in agony, surreal and impressionistic, painted with acrylic's vivid, textured strokes.\",\n\"ARTSTYLE\": \"Surreal Impressionism, Acrylic\"}"
+        ],
+        "{\n    \"reasoning\": \"I need to create a detailed image prompt based on the user's description: 'abstract creature made of shadows and mist,' with a focus on fantasy art styles using watercolors and acrylics. The goal is to generate an eloquent, natural language prompt that can be used for generating images.\",\n    \"T5\": \"In a mystical fantasy landscape, a shadowy, ethereal creature emerges from the swirling mist, its form composed of shifting, fluid shadows that merge with the surrounding fog. Rendered in vibrant watercolors and bold acrylics, the creature's features are abstract and dreamlike, evoking a sense of otherworldliness and mystery.\",\n    \"CLIPG\": \"Abstract shadow creature, ethereal, mystical, watercolor, acrylics\",\n    \"CLIPL\": \"An abstract fantasy creature made of shadows and mist, depicted in vibrant watercolors and bold acrylics.\",\n    \"ARTSTYLE\": \"Fantasy Art\"\n}"
+      ]
+    },
+    {
+      "id": 40,
+      "type": "ShowText|pysssss",
+      "pos": [
+        1875.607421875,
+        2199.72314453125
+      ],
+      "size": [
+        422.99176025390625,
+        294.34259033203125
+      ],
+      "flags": {},
+      "order": 11,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 88,
+          "widget": {
+            "name": "text"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            81
+          ],
+          "slot_index": 0,
+          "shape": 6
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": [
+        [
+          "A surreal, ethereal scene where human forms are abstracted and intertwined, expressing deep agony and suffering. Colors bleed and blend in vibrant, emotive hues—crimson for intense pain, deep blues for sorrow, and swirling purples for confusion. The background is chaotic yet harmonious, with elements floating ambiguously, creating an otherworldly atmosphere that emphasizes emotional depth through textured acrylic strokes."
+        ],
+        "In a mystical fantasy landscape, a shadowy, ethereal creature emerges from the swirling mist, its form composed of shifting, fluid shadows that merge with the surrounding fog. Rendered in vibrant watercolors and bold acrylics, the creature's features are abstract and dreamlike, evoking a sense of otherworldliness and mystery."
+      ]
+    },
+    {
+      "id": 36,
+      "type": "ShowText|pysssss",
+      "pos": [
+        1889.2825927734375,
+        2543.369140625
+      ],
+      "size": [
+        329.86767578125,
+        112.97103881835938
+      ],
+      "flags": {},
+      "order": 12,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 89,
+          "widget": {
+            "name": "text"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            71
+          ],
+          "slot_index": 0,
+          "shape": 6
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": [
+        [
+          "ethereal, agony, surreal, impressionism, acrylic, vibrant hues, distorted forms, emotional turmoil"
+        ],
+        "Abstract shadow creature, ethereal, mystical, watercolor, acrylics"
+      ]
+    },
+    {
+      "id": 38,
+      "type": "Text Concatenate",
+      "pos": [
+        2296.133544921875,
+        2727.663330078125
+      ],
+      "size": [
+        315,
+        178
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 15,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text_a",
+          "type": "STRING",
+          "link": 91,
+          "widget": {
+            "name": "text_a"
+          },
+          "shape": 7
+        },
+        {
+          "name": "text_b",
+          "type": "STRING",
+          "link": 66,
+          "widget": {
+            "name": "text_b"
+          },
+          "shape": 7
+        },
+        {
+          "name": "text_c",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "text_c"
+          },
+          "shape": 7
+        },
+        {
+          "name": "text_d",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "text_d"
+          },
+          "shape": 7
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            79
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Text Concatenate"
+      },
+      "widgets_values": [
+        "",
+        "false",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": 42,
+      "type": "Text Concatenate",
+      "pos": [
+        2276.16748046875,
+        2570.221435546875
+      ],
+      "size": [
+        315,
+        178
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 14,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text_a",
+          "type": "STRING",
+          "link": 92,
+          "widget": {
+            "name": "text_a"
+          },
+          "shape": 7
+        },
+        {
+          "name": "text_b",
+          "type": "STRING",
+          "link": 71,
+          "widget": {
+            "name": "text_b"
+          },
+          "shape": 7
+        },
+        {
+          "name": "text_c",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "text_c"
+          },
+          "shape": 7
+        },
+        {
+          "name": "text_d",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "text_d"
+          },
+          "shape": 7
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            80
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Text Concatenate"
+      },
+      "widgets_values": [
+        "",
+        "false",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": 45,
+      "type": "ModelSamplingAdvancedResolution",
+      "pos": [
+        4069.25341796875,
+        1341.1138916015625
+      ],
+      "size": [
+        390.5999755859375,
+        126
+      ],
+      "flags": {},
+      "order": 9,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 74
+        },
+        {
+          "name": "latent_image",
+          "type": "LATENT",
+          "link": 75
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            58
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ModelSamplingAdvancedResolution"
+      },
+      "widgets_values": [
+        "exponential",
+        1.35,
+        0.85
+      ]
+    },
+    {
+      "id": 50,
+      "type": "BetaSamplingScheduler",
+      "pos": [
+        3715.5380859375,
+        1724.0738525390625
+      ],
+      "size": [
+        315,
+        106
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 82
+        }
+      ],
+      "outputs": [
+        {
+          "name": "SIGMAS",
+          "type": "SIGMAS",
+          "links": [
+            61
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "BetaSamplingScheduler"
+      },
+      "widgets_values": [
+        50,
+        0.4,
+        0.8
+      ]
+    },
+    {
+      "id": 44,
+      "type": "OverrideCLIPDevice",
+      "pos": [
+        4066.011962890625,
+        1540.430419921875
+      ],
+      "size": [
+        315,
+        58
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 73
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            78,
+            86
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "OverrideCLIPDevice"
+      },
+      "widgets_values": [
+        "cpu"
+      ]
+    },
+    {
+      "id": 46,
+      "type": "SD35Loader",
+      "pos": [
+        3717.99169921875,
+        1372.269287109375
+      ],
+      "size": [
+        315,
+        218
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 1,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "links": [
+            74,
+            82
+          ],
+          "slot_index": 0
+        },
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "links": [
+            73
+          ],
+          "slot_index": 1
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "links": [
+            85
+          ],
+          "slot_index": 2
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "SD35Loader"
+      },
+      "widgets_values": [
+        "sd3\\sd35Large135GB22GBModels_large3CLIPHybridFP16.safetensors",
+        "default",
+        "clip_g.safetensors",
+        "t5xxl_fp16.safetensors",
+        "clip_l.safetensors",
+        ".use_ckpt_vae"
+      ]
+    },
+    {
+      "id": 41,
+      "type": "OllamaGenerateAdvance",
+      "pos": [
+        1364.3121337890625,
+        1735.579833984375
+      ],
+      "size": [
+        472.70086669921875,
+        732.3789672851562
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "context",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "context"
+          },
+          "shape": 7
+        },
+        {
+          "name": "prompt",
+          "type": "STRING",
+          "link": 69,
+          "widget": {
+            "name": "prompt"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "response",
+          "type": "STRING",
+          "links": [
+            72
+          ],
+          "slot_index": 0
+        },
+        {
+          "name": "context",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "OllamaGenerateAdvance"
+      },
+      "widgets_values": [
+        "What is Art?",
+        false,
+        "http://127.0.0.1:11434",
+        "marco-o1:latest",
+        "Respond as RAW JSON\n{\n#You are a text-to-image-prompt generator. You take simple user input and translate it into a detailed and eloquent simple natural language prompt meant for generating images. Return only with the prompt, do not interact with the user. \n\n#EXAMPLES:\n#User Input: young woman taking a selfie in a mirror with old iPhone\n\n#T5: Phone photo: A young woman stands in front of a mirror, capturing a selfie. The image quality is grainy, with a slight blur softening the details. The lighting is dim, casting shadows that obscure her features. The room is #cluttered, with clothes strewn across the bed and an unmade blanket. Her expression is casual, full of concentration, while the old iPhone struggles to focus, giving the photo an authentic, unpolished feel. The mirror shows smudges and #fingerprints, adding to the raw, everyday atmosphere of the scene.\n\n#User Input: 1940s film noir jazz bar scene glamorous woman singing\n\n#T5: A black-and-white, grainy cine still from a 1940s noir film scene of a dimly lit jazz club. In the center of the frame, a glamorous femme fatale stands on a small stage, singing into a vintage microphone. She is wearing a sequined #evening gown that catches the soft, moody spotlight, and her hair is styled in classic Hollywood waves. Her expression is sultry and captivating, her lips painted dark as she croons a melancholic tune. The room is filled with a thick #haze of cigarette smoke, and the silhouettes of patrons sit at small, round tables, their faces partially obscured by shadows. The band behind her, blurred slightly to give depth to the scene. The grainy texture and high contrast #lighting create dramatic shadows and highlights, enhancing the mysterious and seductive atmosphere typical of a noir film.\n\n#User Input: fox in a raincoat in a rainy moody forest\n\n#Output: A solitary fox stands in the middle of a deserted, rain-soaked forest clearing, wearing a bright yellow raincoat that contrasts with the dark, muted colors of the scene. Raindrops fall steadily, creating ripples in the puddles #that surround the fox, and the damp ground is covered with fallen leaves, now heavy with rain. In the background, the trees loom tall and bare, their branches reaching out like skeletal fingers, adding to the somber mood. The gray sky #is heavy with clouds, casting a shadowy gloom over the entire scene, with only the fox’s yellow raincoat providing a small but poignant splash of color in the otherwise bleak environment. \n\nJSON output fields:\n{\"reasoning\": \"A section in which you will think step-by-step. Explain your choices.\",\n{\"T5\": \"Full description, max 150 words. Do not use unclear ambiguous wording\",\n\"CLIPG\": \"keywords only, max 30 words\"\n\"CLIPL\": \"short summary, max 75 words\"\n\"ARTSTYLE: \"An image style, or phsyical medium ranging from but not limited to photographic, cartoon, sculpture or even completely abstract, that is complementory or contrasting to the subject, for maximum visual impact, max 10 words\"}\n}",
+        787232010,
+        "randomize",
+        4,
+        0.9,
+        1,
+        -1,
+        1,
+        0,
+        false,
+        "json",
+        ""
+      ]
+    },
+    {
+      "id": 48,
+      "type": "EmptySD3LatentImage",
+      "pos": [
+        3134.31201171875,
+        1975.5794677734375
+      ],
+      "size": [
+        290.8233947753906,
+        106
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "width",
+          "type": "INT",
+          "link": 76,
+          "widget": {
+            "name": "width"
+          }
+        },
+        {
+          "name": "height",
+          "type": "INT",
+          "link": 77,
+          "widget": {
+            "name": "height"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            62,
+            75
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "EmptySD3LatentImage"
+      },
+      "widgets_values": [
+        1024,
+        1024,
+        1
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 33,
+      "type": "Textbox",
+      "pos": [
+        2787.943115234375,
+        1734.2589111328125
+      ],
+      "size": [
+        250.3787841796875,
+        158.9251708984375
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "passthrough",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "passthrough"
+          },
+          "shape": 7
+        }
+      ],
+      "outputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "links": [
+            69
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "title": "Prompt",
+      "properties": {
+        "Node name for S&R": "Textbox"
+      },
+      "widgets_values": [
+        "an abstract creature made of shadows and mist. fantasy art, watercolor and acryllics",
+        ""
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 55,
+      "type": "ParseJSON",
+      "pos": [
+        1427.291015625,
+        2535.613525390625
+      ],
+      "size": [
+        400,
+        318
+      ],
+      "flags": {},
+      "order": 10,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "json_string",
+          "type": "STRING",
+          "link": 87,
+          "widget": {
+            "name": "json_string"
+          },
+          "shape": 7
+        }
+      ],
+      "outputs": [
+        {
+          "name": "string_1",
+          "type": "STRING",
+          "links": [
+            88
+          ]
+        },
+        {
+          "name": "string_2",
+          "type": "STRING",
+          "links": [
+            89
+          ]
+        },
+        {
+          "name": "string_3",
+          "type": "STRING",
+          "links": [
+            90
+          ]
+        },
+        {
+          "name": "string_4",
+          "type": "STRING",
+          "links": [
+            91,
+            92
+          ]
+        },
+        {
+          "name": "string_5",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "name": "JSON_Obj",
+          "type": "DICTIONARY",
+          "links": null
+        },
+        {
+          "name": "help",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "name": "Troubleshooting",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ParseJSON"
+      },
+      "widgets_values": [
+        "T5",
+        "CLIPG",
+        "CLIPL",
+        "ARTSTYLE",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": 47,
+      "type": "CM_SDXLResolution",
+      "pos": [
+        2779.0224609375,
+        1976.9105224609375
+      ],
+      "size": [
+        315,
+        78
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 2,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "width",
+          "type": "INT",
+          "links": [
+            76
+          ],
+          "slot_index": 0
+        },
+        {
+          "name": "height",
+          "type": "INT",
+          "links": [
+            77
+          ],
+          "slot_index": 1
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CM_SDXLResolution"
+      },
+      "widgets_values": [
+        "1344x768"
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 37,
+      "type": "ShowText|pysssss",
+      "pos": [
+        1879.193115234375,
+        2705.2861328125
+      ],
+      "size": [
+        362.7854309082031,
+        148.1065216064453
+      ],
+      "flags": {},
+      "order": 13,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 90,
+          "widget": {
+            "name": "text"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            66
+          ],
+          "slot_index": 0,
+          "shape": 6
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": [
+        [
+          "Ethereal forms in agony, surreal and impressionistic, painted with acrylic's vivid, textured strokes."
+        ],
+        "An abstract fantasy creature made of shadows and mist, depicted in vibrant watercolors and bold acrylics."
+      ]
+    }
+  ],
+  "links": [
+    [
+      57,
+      52,
+      0,
+      34,
+      0,
+      "IMAGE"
+    ],
+    [
+      58,
+      45,
+      0,
+      35,
+      0,
+      "MODEL"
+    ],
+    [
+      59,
+      49,
+      0,
+      35,
+      1,
+      "CONDITIONING"
+    ],
+    [
+      60,
+      53,
+      0,
+      35,
+      2,
+      "CONDITIONING"
+    ],
+    [
+      61,
+      50,
+      0,
+      35,
+      3,
+      "SIGMAS"
+    ],
+    [
+      62,
+      48,
+      0,
+      35,
+      4,
+      "LATENT"
+    ],
+    [
+      66,
+      37,
+      0,
+      38,
+      1,
+      "STRING"
+    ],
+    [
+      69,
+      33,
+      0,
+      41,
+      1,
+      "STRING"
+    ],
+    [
+      71,
+      36,
+      0,
+      42,
+      1,
+      "STRING"
+    ],
+    [
+      72,
+      41,
+      0,
+      43,
+      0,
+      "STRING"
+    ],
+    [
+      73,
+      46,
+      1,
+      44,
+      0,
+      "CLIP"
+    ],
+    [
+      74,
+      46,
+      0,
+      45,
+      0,
+      "MODEL"
+    ],
+    [
+      75,
+      48,
+      0,
+      45,
+      1,
+      "LATENT"
+    ],
+    [
+      76,
+      47,
+      0,
+      48,
+      0,
+      "INT"
+    ],
+    [
+      77,
+      47,
+      1,
+      48,
+      1,
+      "INT"
+    ],
+    [
+      78,
+      44,
+      0,
+      49,
+      0,
+      "CLIP"
+    ],
+    [
+      79,
+      38,
+      0,
+      49,
+      1,
+      "STRING"
+    ],
+    [
+      80,
+      42,
+      0,
+      49,
+      2,
+      "STRING"
+    ],
+    [
+      81,
+      40,
+      0,
+      49,
+      3,
+      "STRING"
+    ],
+    [
+      82,
+      46,
+      0,
+      50,
+      0,
+      "MODEL"
+    ],
+    [
+      83,
+      35,
+      0,
+      51,
+      0,
+      "*"
+    ],
+    [
+      84,
+      51,
+      0,
+      52,
+      0,
+      "LATENT"
+    ],
+    [
+      85,
+      46,
+      2,
+      52,
+      1,
+      "VAE"
+    ],
+    [
+      86,
+      44,
+      0,
+      53,
+      0,
+      "CLIP"
+    ],
+    [
+      87,
+      43,
+      0,
+      55,
+      0,
+      "STRING"
+    ],
+    [
+      88,
+      55,
+      0,
+      40,
+      0,
+      "STRING"
+    ],
+    [
+      89,
+      55,
+      1,
+      36,
+      0,
+      "STRING"
+    ],
+    [
+      90,
+      55,
+      2,
+      37,
+      0,
+      "STRING"
+    ],
+    [
+      91,
+      55,
+      3,
+      38,
+      0,
+      "STRING"
+    ],
+    [
+      92,
+      55,
+      3,
+      42,
+      0,
+      "STRING"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.8264462809917354,
+      "offset": [
+        -759.9484931771709,
+        -1668.5861376233765
+      ]
+    },
+    "ue_links": []
+  },
+  "version": 0.4
+}
