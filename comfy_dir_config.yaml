@@ -1,5 +1,6 @@
 comfyui:
     base_path: /workspace/shared
+    is_default: true
     custom_nodes: custom_nodes/
     input: input/
     animatediff_models: models/animatediff_models/
