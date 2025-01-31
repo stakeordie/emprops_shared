@@ -260,6 +260,10 @@
       "name": "comfy_mtb",
       "url": "https://github.com/melMass/comfy_mtb.git",
       "requirements": true
+    },{
+      "name": "ComfyUI_YFG_Comical",
+      "url": "https://github.com/gonzalu/ComfyUI_YFG_Comical",
+      "requirements": false
     }
   ]
 }
