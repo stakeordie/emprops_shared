@@ -26,3 +26,4 @@ comfyui:
     vae_approx: models/vae_approx/
     user: user/
     workflows: workflows/
+    text_encoders: text_encoders/
