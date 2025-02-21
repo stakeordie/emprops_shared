@@ -264,6 +264,10 @@
       "name": "ComfyUI_YFG_Comical",
       "url": "https://github.com/gonzalu/ComfyUI_YFG_Comical",
       "requirements": false
+    },{
+      "name": "ComfyUI_YFG_Comical",
+      "url": "https://github.com/BlenderNeko/ComfyUI_ADV_CLIP_emb",
+      "requirements": false
     }
   ]
 }
