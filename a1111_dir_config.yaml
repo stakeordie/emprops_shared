@@ -1,0 +1,31 @@
+# 2025-04-12 20:26: Created mapping configuration for Automatic1111 directories
+automatic1111:
+  base_path: /workspace/shared
+  is_default: true
+  # Main model directories
+  models:
+    # Map checkpoints to models/Stable-diffusion
+    checkpoints: models/checkpoints/ -> models/Stable-diffusion/
+    # Map VAE models
+    vae: models/vae/ -> models/VAE/
+    # Map LORA models
+    loras: models/loras/ -> models/Lora/
+    # Map embeddings (textual inversions)
+    embeddings: models/embeddings/ -> embeddings/
+    # Map hypernetworks
+    hypernetworks: models/hypernetworks/ -> models/hypernetworks/
+    # Map controlnet models
+    controlnet: models/controlnet/ -> extensions/sd-webui-controlnet/models/
+    # Map upscalers
+    upscale_models: models/upscale_models/ -> models/ESRGAN/
+  
+  # Other important directories
+  directories:
+    # Map workflows to user presets
+    workflows: workflows/ -> presets/
+    # Map custom nodes to extensions
+    custom_nodes: custom_nodes/ -> extensions/
+    # Map input directory
+    input: input/ -> inputs/
+    # Map output directory (this will be created if it doesn't exist)
+    output: output/ -> outputs/
