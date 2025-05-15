@@ -1,0 +1,52 @@
+{
+  "// Updated: 2025-05-15T14:42:14-04:00 - Cleaned up static_models.json to only include models in both lists": "",
+  "symlinks": [
+    {
+      "source": "Stable-diffusion/v1-5-pruned.safetensors",
+      "target": "checkpoints/v1-5-pruned.safetensors",
+      "description": "Stable Diffusion 1.5 base model"
+    },
+    {
+      "source": "Stable-diffusion/v2-1_768-ema-pruned.safetensors",
+      "target": "checkpoints/v2-1_768-ema-pruned.safetensors",
+      "description": "Stable Diffusion 2.1 base model"
+    },
+    {
+      "source": "Stable-diffusion/sd_xl_base_1.0_0.9vae.safetensors",
+      "target": "checkpoints/sd_xl_base_1.0_0.9vae.safetensors",
+      "description": "Stable Diffusion XL base model with 0.9 VAE"
+    },
+    {
+      "source": "Stable-diffusion/sd_xl_refiner_1.0_0.9vae.safetensors",
+      "target": "checkpoints/sd_xl_refiner_1.0_0.9vae.safetensors",
+      "description": "Stable Diffusion XL refiner model with 0.9 VAE"
+    },
+    {
+      "source": "Stable-diffusion/epiCPhotoGasm.safetensors",
+      "target": "checkpoints/epiCPhotoGasm.safetensors",
+      "description": "EpiCPhotoGasm model"
+    }
+  ],
+  "no_index": [
+    {
+      "path": "/workspace/shared/models/checkpoints/v1-5-pruned.safetensors",
+      "reason": "Static model from sd_models"
+    },
+    {
+      "path": "/workspace/shared/models/checkpoints/v2-1_768-ema-pruned.safetensors",
+      "reason": "Static model from sd_models"
+    },
+    {
+      "path": "/workspace/shared/models/checkpoints/sd_xl_base_1.0_0.9vae.safetensors",
+      "reason": "Static model from sd_models"
+    },
+    {
+      "path": "/workspace/shared/models/checkpoints/sd_xl_refiner_1.0_0.9vae.safetensors",
+      "reason": "Static model from sd_models"
+    },
+    {
+      "path": "/workspace/shared/models/checkpoints/epiCPhotoGasm.safetensors",
+      "reason": "Static model from sd_models"
+    }
+  ]
+}
