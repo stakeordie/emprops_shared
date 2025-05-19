@@ -286,6 +286,11 @@
       "name": "comfy-asset-downloader",
       "url": "https://github.com/ServiceStack/comfy-asset-downloader.git",
       "requirements": false
+    },
+    {
+      "name": "ComfyUI-LTXVideo",
+      "url": "https://github.com/Lightricks/ComfyUI-LTXVideo",
+      "requirements": true
     }
   ]
 }
