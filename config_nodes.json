@@ -297,6 +297,11 @@
       "name": "ComfyUI-LTXVideo",
       "url": "https://github.com/Lightricks/ComfyUI-LTXVideo",
       "requirements": true
+    },
+    {
+      "name": "ComfyUI-GGUF",
+      "url": "https://github.com/city96/ComfyUI-GGUF",
+      "requirements": true
     }
   ]
 }
