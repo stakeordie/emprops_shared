@@ -294,8 +294,8 @@
       "requirements": false
     },
     {
-      "name": "ComfyUI-LTXVideo",
-      "url": "https://github.com/Lightricks/ComfyUI-LTXVideo",
+      "name": "ComfyUI-LTXVideo-Emprops",
+      "url": "https://github.com/stakeordie/ComfyUI-LTXVideo-EmProps",
       "requirements": true
     },
     {
