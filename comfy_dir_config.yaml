@@ -19,6 +19,7 @@ comfyui:
     photomaker: models/photomaker/
     sams: models/sams/
     style_models: models/style_models/
+    text_encoders: models/text_encoders/
     ultralytics: models/ultralytics/
     unet: models/unet/
     upscale_models: models/upscale_models/
@@ -26,4 +27,4 @@ comfyui:
     vae_approx: models/vae_approx/
     user: user/
     workflows: workflows/
-    text_encoders: text_encoders/
+    
