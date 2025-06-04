@@ -306,7 +306,7 @@
     {
       "name": "ComfyUI-Ollama-Describer",
       "url": "https://github.com/alisson-anjos/ComfyUI-Ollama-Describer",
-      "requirements": false
+      "requirements": true
     }
   ]
 }
