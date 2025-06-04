@@ -18,7 +18,11 @@
         "CLOUD_PROVIDER": "${CLOUD_PROVIDER}",
         "STATIC_MODELS": "${STATIC_MODELS}",
         "EMPROPS_DEBUG_LOGGING": "${EMPROPS_DEBUG_LOGGING}",
-        "HF_TOKEN": "${HF_TOKEN}"
+        "HF_TOKEN": "${HF_TOKEN}",
+        "CIVITAI_TOKEN": "${CIVITAI_TOKEN}",
+        "OLLAMA_HOST": "${OLLAMA_HOST}",
+        "OLLAMA_PORT": "${OLLAMA_PORT}",
+        "OLLAMA_DEFAULT_MODEL": "${OLLAMA_DEFAULT_MODEL}"
       }
     },
     {
@@ -90,7 +94,11 @@
         "CLOUD_STORAGE_TEST_CONTAINER": "${CLOUD_STORAGE_TEST_CONTAINER}",
         "CLOUD_PROVIDER": "${CLOUD_PROVIDER}",
         "EMPROPS_DEBUG_LOGGING": "${EMPROPS_DEBUG_LOGGING}",
-        "HF_TOKEN": "${HF_TOKEN}"
+        "HF_TOKEN": "${HF_TOKEN}",
+        "CIVITAI_TOKEN": "${CIVITAI_TOKEN}",
+        "OLLAMA_HOST": "${OLLAMA_HOST}",
+        "OLLAMA_PORT": "${OLLAMA_PORT}",
+        "OLLAMA_DEFAULT_MODEL": "${OLLAMA_DEFAULT_MODEL}"
       }
     },
     {
@@ -300,7 +308,7 @@
     },
     {
       "name": "ComfyUI-GGUF",
-      "url": "https://github.com/city96/ComfyUI-GGUF",
+      "url": "https://github.com/stakeordie/ComfyUI-GGUF-EmProps",
       "requirements": true
     },
     {
