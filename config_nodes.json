@@ -302,6 +302,11 @@
       "name": "ComfyUI-GGUF",
       "url": "https://github.com/city96/ComfyUI-GGUF",
       "requirements": true
+    },
+    {
+      "name": "ComfyUI-Ollama-Describer",
+      "url": "https://github.com/alisson-anjos/ComfyUI-Ollama-Describer",
+      "requirements": false
     }
   ]
 }
