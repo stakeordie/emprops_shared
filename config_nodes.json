@@ -307,6 +307,11 @@
       "name": "ComfyUI-Ollama-Describer",
       "url": "https://github.com/alisson-anjos/ComfyUI-Ollama-Describer",
       "requirements": true
+    },
+    {
+      "name": "comfyui-ollama",
+      "url": "https://github.com/stavsap/comfyui-ollama",
+      "requirements": true
     }
   ]
 }
