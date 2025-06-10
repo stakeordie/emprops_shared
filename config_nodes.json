@@ -320,6 +320,11 @@
       "name": "comfyui-ollama",
       "url": "https://github.com/stavsap/comfyui-ollama",
       "requirements": true
+    },
+    {
+      "name": "ControlFlowUtils",
+      "url": "https://github.com/VykosX/ControlFlowUtils",
+      "requirements": false
     }
   ]
 }
