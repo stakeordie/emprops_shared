@@ -325,6 +325,11 @@
       "name": "ControlFlowUtils",
       "url": "https://github.com/VykosX/ControlFlowUtils",
       "requirements": false
+    },
+    {
+      "name": "komojini-comfyui-nodes",
+      "url": "https://github.com/komojini/komojini-comfyui-nodes",
+      "requirements": true
     }
   ]
 }
