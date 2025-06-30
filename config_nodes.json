@@ -330,6 +330,11 @@
       "name": "komojini-comfyui-nodes",
       "url": "https://github.com/komojini/komojini-comfyui-nodes",
       "requirements": true
+    },
+    {
+      "name": "ComfyUI-Hunyuan3D-2.1",
+      "url": "git clone https://github.com/Yuan-ManX/ComfyUI-Hunyuan3D-2.1",
+      "requirements": true
     }
   ]
 }
