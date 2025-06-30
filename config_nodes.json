@@ -335,6 +335,11 @@
       "name": "ComfyUI-Hunyuan3D-2.1",
       "url": "git clone https://github.com/Yuan-ManX/ComfyUI-Hunyuan3D-2.1",
       "requirements": true
+    },
+    {
+      "name": "ComfyUI-Inpaint-CropAndStitch",
+      "url": "git clone https://github.com/lquesada/ComfyUI-Inpaint-CropAndStitch.git",
+      "requirements": false
     }
   ]
 }
