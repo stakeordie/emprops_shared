@@ -345,6 +345,11 @@
       "name": "comfyui-kokoro",
       "url": "git clone https://github.com/stavsap/comfyui-kokoro",
       "requirements": true
+    },
+    {
+      "name": "ComfyUI_ACE-Step",
+      "url": "git clone https://github.com/billwuhao/ComfyUI_ACE-Step",
+      "requirements": true
     }
   ]
 }
