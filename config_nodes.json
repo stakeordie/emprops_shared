@@ -1,6 +1,11 @@
 {
   "custom_nodes": [
     {
+      "name": "ComfyUI-Manager",
+      "url": "git clone https://github.com/Comfy-Org/ComfyUI-Manager.git",
+      "requirements": true
+    },
+    {
       "name": "emprops_comfy_nodes",
       "url": "https://github.com/stakeordie/emprops_comfy_nodes.git",
       "recursive": true,
