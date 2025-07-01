@@ -338,8 +338,13 @@
     },
     {
       "name": "ComfyUI-Inpaint-CropAndStitch",
-      "url": "git clone https://github.com/lquesada/ComfyUI-Inpaint-CropAndStitch.git",
+      "url": "git clone https://github.com/lquesada/ComfyUI-Inpaint-CropAndStitch",
       "requirements": false
+    },
+    {
+      "name": "comfyui-kokoro",
+      "url": "git clone https://github.com/stavsap/comfyui-kokoro",
+      "requirements": true
     }
   ]
 }
