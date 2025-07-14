@@ -1,5 +1,5 @@
 comfyui:
-    base_path: /workspace/shared
+    base_path: /workspace/ComfyUI
     is_default: true
     custom_nodes: custom_nodes/
     input: input/
